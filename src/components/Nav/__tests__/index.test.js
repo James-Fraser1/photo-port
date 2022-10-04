@@ -29,14 +29,8 @@ describe('emoji is visible', () => {
 
 describe('links are visible', () => {
     it('inserts text into the links', () => {
-        // Arrange
-        // Assert
-        <a data-testid="link" href="/">
-            <span role="img" aria-label="camera"> 📸</span> Oh Snap!
-            <a data-testid="about" href="#about">
-
-                const {getByTestId} = render(<Nav />);
-                expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
-                expect(getByTestId('about')).toHaveTextContent('About me');
+        const { getByTestId } = render(<Nav />);
+        expect(getByTestId('link')).toHaveTextContent('Oh Snap!');
+        expect(getByTestId('about')).toHaveTextContent('About me');
     });
 })
