@@ -17,14 +17,14 @@ it('matches snapshot DOM node structure', () => {
     expect(asFragment()).toMatchSnapshot();
 })
 
-it('renders', () => {
-    const { getByTestId } = render(<Contact currentCategory={ContactForm} />)
-    expect(getByTestId('h1tag')).toHaveTextContent('Contact Me')
-})
+// it('renders', () => {
+//     const { getByTestId } = render(<Contact currentCategory={ContactForm} />)
+//     expect(getByTestId('h1tag')).toHaveTextContent('Contact Me')
+// })
 
-it('renders', () => {
-    const { getByTestId } = render(<Contact currentCategory={ContactForm} />)
-    expect(getByTestId('button')).toHaveTextContent('Submit')
-})
+// it('renders', () => {
+//     const { getByTestId } = render(<Contact currentCategory={ContactForm} />)
+//     expect(getByTestId('button')).toHaveTextContent('Submit')
+// })
 
 })
